@@ -1,0 +1,135 @@
+.thumbnail{
+    width: 100%;
+}
+
+.video-title{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.video-author,
+.video-stats{
+    font-size: 12px;
+    color: rgb(96,96,96);
+}
+
+.video-author{
+    margin-bottom: 4px;
+}
+
+.video-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.channel-picture2{
+    position: relative;
+}
+
+.channel-picture2 .channeltip{
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 10px;
+    bottom: -80px;
+    box-shadow: 0px 0px 2px 2px rgb(200, 199, 199);
+    opacity: 0;
+    transition: opacity 0.25s;
+    pointer-events: none;
+    z-index: 300;
+}
+
+.channel-picture2 .channeltip img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.channel-picture2 .channeltip div{
+    margin-left: 5px;
+    white-space: nowrap;
+}
+
+.channel-picture2:hover .channeltip{
+    opacity: 1;
+}
+
+.name{
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.subs{
+    color: rgb(97, 97, 97);
+    font-size: 13px;
+}
+
+.profile-picture
+{
+    width: 36px;
+    border-radius: 50%;
+}
+
+.thumbnail-row{
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+
+@media (max-width: 750px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 999px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px){
+    .video-info{
+        font-size: 14px;
+    }
+    
+    .video-title{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+}
+
+.video-time{
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px;
+    border-radius: 2px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+}
